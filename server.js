@@ -55,7 +55,7 @@ app.get('/api/config', (req, res) => {
   res.json({
     hasServerApiKey: hasKey,
     defaultModel: process.env.DEFAULT_MODEL || 'gemma-4-31b-it',
-    fastModel: process.env.FAST_MODEL || 'gemini-2.5-flash'
+    fastModel: process.env.FAST_MODEL || 'gemma-4-31b-it'
   });
 });
 
@@ -88,7 +88,7 @@ app.post('/api/chat', async (req, res) => {
     // Determine the model (always configured on the server)
     let selectedModel = process.env.DEFAULT_MODEL || 'gemma-4-31b-it';
     if (mode === 'fast') {
-      selectedModel = process.env.FAST_MODEL || 'gemini-2.5-flash';
+      selectedModel = process.env.FAST_MODEL || 'gemma-4-31b-it';
     }
     const modelPath = selectedModel.startsWith('models/') ? selectedModel : `models/${selectedModel}`;
 
@@ -168,7 +168,7 @@ app.post('/api/chat', async (req, res) => {
   }
 });
 
-// Start the server (watch reload v5)
+// Start the server (watch reload v7)
 app.listen(PORT, () => {
   console.log(`==================================================`);
   console.log(`🚀 CTUT 2026 AI Admission Advisor is running!`);

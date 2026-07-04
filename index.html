@@ -1381,7 +1381,7 @@
             // Determine default API base URL
             apiBaseUrl = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') && window.location.port === '3000'
                 ? '' 
-                : 'https://tuyensinh-backend-ctut.vercel.app/'; // Change this to your Vercel API URL if deploying frontend separately
+                : 'https://tuyensinh-backend-ctut.vercel.app'
 
             // Theme load
             const html = document.documentElement;
@@ -1612,7 +1612,7 @@
             const content = messageWrapper.querySelector('.message-content');
             content.innerHTML = ''; // Clear previous contents
             
-            if (assistantMode !== 'fast' && thoughts && thoughts.trim()) {
+            if (thoughts && thoughts.trim()) {
                 const thoughtsContainer = document.createElement('div');
                 // Keep thoughts expanded during streaming for real-time visibility
                 thoughtsContainer.className = 'thought-container expanded';
@@ -1651,7 +1651,7 @@
             const content = messageWrapper.querySelector('.message-content');
             content.innerHTML = '';
             
-            if (assistantMode !== 'fast' && thoughts && thoughts.trim()) {
+            if (thoughts && thoughts.trim()) {
                 const thoughtsContainer = document.createElement('div');
                 // Collapse thoughts once generation is finished
                 thoughtsContainer.className = 'thought-container';
@@ -1700,7 +1700,7 @@
             
             if (role === 'ai') {
                 // Render thoughts collapsible block if present
-                if (assistantMode !== 'fast' && thoughts && thoughts.trim()) {
+                if (thoughts && thoughts.trim()) {
                     const thoughtsContainer = document.createElement('div');
                     thoughtsContainer.className = 'thought-container';
                     
