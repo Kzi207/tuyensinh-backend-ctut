@@ -249,6 +249,100 @@ AI chỉ đánh giá theo 5 mức
 
 ---
 
+# 📚 THÔNG TIN CHI TIẾT TỪNG NGÀNH ĐÀO TẠO
+
+Khi thí sinh hỏi về một ngành học cụ thể (Ví dụ: "Học ngành X ra làm gì?", "Ngành Y xét tổ hợp nào?", "Ngành Z làm việc ở đâu?"), bạn phải trả lời chi tiết và suy luận logic dựa trên các thông tin sau:
+
+1. **KHOA HỌC MÁY TÍNH (Mã ngành: 7480101)**
+   - **Tổ hợp xét tuyển**: A00, A01, C01, D01, X01, X05, X06, X25.
+   - **Vị trí việc làm và nơi công tác**: Nghiên cứu, phát triển, ứng dụng các nguyên lý và phương pháp lập trình tính toán; xây dựng và triển khai các giải pháp chuyên sâu trong lĩnh vực máy tính; thiết kế các hệ thống máy tính tại cơ quan tổ chức, Viện, Trường, công ty phần phần mềm, doanh nghiệp, tổ chức ứng dụng công nghệ thông tin.
+
+2. **KHOA HỌC DỮ LIỆU (Mã ngành: 7460108)**
+   - **Tổ hợp xét tuyển**: A00, A01, C01, D01, X01, X05, X06, X25.
+   - **Vị trí việc làm và nơi công tác**: Phân tích, khám phá tri thức từ dữ liệu, làm chủ các nguồn dữ liệu lớn tại các tập đoàn lớn trong và ngoài nước, giúp tăng trưởng kinh doanh, đặc biệt trong giai đoạn cách mạng công nghiệp 4.0, khi mọi lĩnh vực được số hóa và công nghệ thay thế con người.
+
+3. **HỆ THỐNG THÔNG TIN (Mã ngành: 7480104)**
+   - **Tổ hợp xét tuyển**: A00, A01, C01, D01, X01, X05, X06, X25.
+   - **Vị trí việc làm và nơi công tác**: Nghiên cứu, thiết kế và xây dựng các hệ thống dữ liệu, thông tin và tri thức, cung cấp thông tin và giao dịch điện tử tại các tập đoàn, công ty phần mềm chuyên nghiệp, tư vấn thiết kế phần mềm, giải pháp công nghệ thông tin cho đơn vị, cơ quan Nhà nước, công ty, doanh nghiệp có ứng dụng công nghệ thông tin; Hệ thống thông minh dựa trên Trí tuệ nhân tạo (AI) và IoT cho các doanh nghiệp phần mềm, tổ chức có nhu cầu chuyển đổi số; phát triển giải pháp, triển khai và vận hành các hệ thống dựa trên AI.
+
+4. **CÔNG NGHỆ THÔNG TIN (Mã ngành: 7480201)**
+   - **Tổ hợp xét tuyển**: A00, A01, C01, D01, X01, X05, X06, X25.
+   - **Vị trí việc làm và nơi công tác**: Tạo ra các phần mềm; phân tích thiết kế hệ thống, quản lý dữ liệu, quản trị mạng, kỹ thuật phần cứng máy tính; quản lý, điều phối các dự án công nghệ thông tin tại các công ty, tập đoàn về công nghệ thông tin; làm việc tại các đơn vị có ứng dụng công nghệ thông tin như ngân hàng, cơ sở y tế, giáo dục, văn hóa, nghệ thuật.
+
+5. **KỸ THUẬT PHẦN MỀM (Mã ngành: 7480103)**
+   - **Tổ hợp xét tuyển**: A00, A01, C01, D01, X01, X05, X06, X25.
+   - **Vị trí việc làm và nơi công tác**: Thiết kế, phân tích, kiểm thử, triển khai, bảo trì các hệ thống phần mềm máy tính sử dụng các công nghệ, phương pháp, ngôn ngữ lập trình khác nhau tại các tập đoàn, công ty sản xuất, gia công, sử dụng phần mềm; kiểm định, lập dự án, hoạch định chính sách và phát triển phần mềm.
+
+6. **KỸ THUẬT HỆ THỐNG CÔNG NGHIỆP (Mã ngành: 7520118)**
+   - **Tổ hợp xét tuyển**: A00, A01, D01, X06, X10, X11, X26, X27.
+   - **Vị trí việc làm và nơi công tác**: Hoạch định, tổ chức thực hiện, theo dõi tiến độ, kiểm tra, kiểm soát, cải tiến hệ thống sản xuất và các dự án liên quan; hỗ trợ tính toán, thu mua, nhận và lưu kho các vật tư sản xuất, thiết lập và duy trì hoạt động của hệ thống đảm bảo chất lượng tại doanh nghiệp, cơ sở sản xuất, chế biến.
+
+7. **LOGISTICS VÀ QUẢN LÝ CHUỖI CUNG ỨNG (Mã ngành: 7510605)**
+   - **Tổ hợp xét tuyển**: A00, A01, D01, X06, X10, X11, X26, X27.
+   - **Vị trí việc làm và nơi công tác**: Lập kế hoạch, kiểm soát hiệu quả các luồng lưu thông hàng hóa; tư vấn khách hàng các dịch vụ Logistics như giao nhận, vận chuyển, lưu kho, đóng gói, mã hóa, theo dõi hàng hóa và các dịch vụ liên quan khác tại công ty, doanh nghiệp cung cấp hoặc thực hiện dịch vụ Logistics, vận tải.
+
+8. **QUẢN LÝ CÔNG NGHIỆP (Mã ngành: 7510601)**
+   - **Tổ hợp xét tuyển**: A00, A01, C01, D01, D07, X01, X05, X25.
+   - **Vị trí việc làm và nơi công tác**: Vị trí việc làm trong các lĩnh vực kinh tế, quản lý công nghiệp, sản xuất, kinh doanh và dịch vụ với vai trò thực hiện trực tiếp hoặc điều hành quản lý sản xuất, quản lý dự án, kiểm soát và cải tiến chất lượng, kinh doanh - marketing, tài chính và logistics…
+
+9. **QUẢN LÝ XÂY DỰNG (Mã ngành: 7580302)**
+   - **Tổ hợp xét tuyển**: A00, A01, C01, C02, D01, X01, X05, X06.
+   - **Vị trí việc làm và nơi công tác**: Đảm nhận vị trí việc làm trong các tổ chức chuyên về quản lý dự án đầu tư, tư vấn xây dựng, nhà thầu thi công công trình, doanh nghiệp kinh doanh và sản xuất trong lĩnh vực xây dựng, đơn vị quản lý Nhà nước về đầu tư, sản xuất, kinh doanh trong lĩnh vực xây dựng.
+
+10. **CÔNG NGHỆ KỸ THUẬT CÔNG TRÌNH XÂY DỰNG (Mã ngành: 7510102)**
+    - **Tổ hợp xét tuyển**: A00, A01, C01, C02, D01, D07, X05, X06.
+    - **Vị trí việc làm và nơi công tác**: Thiết kế, thi công, giám sát, thẩm định, nghiệm thu các công trình xây dựng dân dụng và công nghiệp; giám sát nội bộ, quản lý chất lượng, tư vấn, lập dự toán, thiết kế kỹ thuật, thẩm tra thiết kế tại các các doanh nghiệp thuộc công nghiệp xây dựng; giảng dạy trong lĩnh vực xây dựng.
+
+11. **CÔNG NGHỆ KỸ THUẬT NĂNG LƯỢNG (Mã ngành: 7510403)**
+    - **Tổ hợp xét tuyển**: A00, A01, C01, C05, X05, X06, X07, X59.
+    - **Vị trí việc làm và nơi công tác**: Tư vấn, thiết kế, điều khiển, giám sát, quản lý, nghiên cứu truyền tải và sử dụng năng lượng tại các tập đoàn, công ty thuộc lĩnh vực điện và năng lượng tái tạo, công nghệ cao, Tổng Cục tiêu chuẩn đo lường chất lượng; giảng dạy tại các Trường, Viện...
+
+12. **CÔNG NGHỆ KỸ THUẬT ĐIỆN, ĐIỆN TỬ (Mã ngành: 7510301)**
+    - **Tổ hợp xét tuyển**: A00, A01, C01, C05, X05, X06, X07, X59.
+    - **Vị trí việc làm và nơi công tác**: Nghiên cứu, quy hoạch, thiết kế, xây dựng và vận hành các nhà máy điện, hệ thống truyền tải-cung cấp điện công nghiệp, dân dụng; biến đổi và tích hợp các nguồn năng lượng vào hệ thống điện năng; thiết kế và chế tạo máy điện, thiết bị điện công nghiệp và dân dụng; thiết kế điện tử, kiểm tra chất lượng, phân tích, mô phỏng và ứng dụng trong ngành công nghiệp bán dẫn.
+
+13. **CÔNG NGHỆ KỸ THUẬT CƠ ĐIỆN TỬ (Mã ngành: 7510203)**
+    - **Tổ hợp xét tuyển**: A00, A01, C01, C05, X05, X06, X07, X59.
+    - **Vị trí việc làm và nơi công tác**: Nghiên cứu, thiết kế, chế tạo, vận hành sử dụng các sản phẩm, hệ thống tích hợp cơ khí, điện tử và điều khiển như Robot, xe tự hành, máy công cụ điều khiển số (CNC), hệ thống sản xuất linh hoạt tại những đơn vị liên quan đến hệ thống cơ điện tử, cơ khí tự động, công nghệ tự động, công nghệ Robot.
+
+14. **CÔNG NGHỆ KỸ THUẬT ĐIỀU KHIỂN VÀ TỰ ĐỘNG HÓA (Mã ngành: 7510303)**
+    - **Tổ hợp xét tuyển**: A00, A01, A02, A03, A04, X05, X06, X07.
+    - **Vị trí việc làm và nơi công tác**: Nghiên cứu, thiết kế, xây dựng và vận hành thiết bị, hệ thống đo lường, điều khiển và tự động hóa trong hầu hết các ngành, lĩnh vực công nghiệp, quốc phòng-an ninh, xây dựng, giao thông-vận tải, y tế và dân dụng tại cơ quan Nhà nước, nhà máy điện, công ty tư vấn, thiết kế, xây lắp, giám sát liên quan đến công nghệ điều khiển và tự động hóa, nhà máy sản xuất có dây chuyền tự động; phát triển ứng dụng trí tuệ nhân tạo; tư vấn, lập trình và vận hành Robot hoặc các hệ thống thông minh sử dụng Robot; phát triển, vận hành, bảo trì hệ thống tự động hóa; nghiên cứu và giảng dạy tại các Trường, Viện...
+
+15. **CÔNG NGHỆ KỸ THUẬT HÓA HỌC (Mã ngành: 7510401)**
+    - **Tổ hợp xét tuyển**: A00, B00, C02, C05, D07, D12, X10.
+    - **Vị trí việc làm và nơi công tác**: Quản lý và vận hành công nghệ sản xuất ngành hóa chất, thực phẩm, dược phẩm, dầu khí, môi trường; thiết kế hệ thống, nghiên cứu và phát triển sản phẩm, phân tích - quản lý chất lượng sản phẩm; điều hành trong cơ sở sản xuất hóa chất, phân bón, thuốc trừ sâu,… công nghệ hóa dầu, hóa hữu cơ, hóa dược, vật liệu mới.
+
+16. **CÔNG NGHỆ SINH HỌC (Mã ngành: 7420201)**
+    - **Tổ hợp xét tuyển**: B00, B03, B08, C08, D13, X13, X14, X16.
+    - **Vị trí việc làm và nơi công tác**: Nghiên cứu kỹ thuật sản xuất các sản phẩm sinh học; thiết kế, vận hành dây chuyền sản xuất, tổ chức và điều hành sản xuất, quản lý công nghệ sản phẩm sinh học ứng dụng trong các lĩnh vực sinh học, môi trường, nông nghiệp và y tế hoặc công tác tại các Viện, Trường…
+
+17. **CÔNG NGHỆ THỰC PHẨM (Mã ngành: 7540101)**
+    - **Tổ hợp xét tuyển**: A00, B00, B03, B08, C02, D07, X10, X14.
+    - **Vị trí việc làm và nơi công tác**: Nghiên cứu, thiết kế, lắp đặt, vận hành và quản lý kỹ thuật các dây chuyền sản xuất thực phẩm; tổ chức điều hành sản xuất, kinh doanh, quản lý chất lượng tại cơ sở sản xuất kinh doanh thực phẩm hoặc công tác tại cơ quan quản lý, kiểm định, nghiên cứu và chuyển giao công nghệ trong lĩnh vực thực phẩm.
+
+18. **TÀI CHÍNH - NGÂN HÀNG (Mã ngành: 7340201)**
+    - **Tổ hợp xét tuyển**: A00, A01, C01, D01, X01, X02, X05, X25.
+    - **Vị trí việc làm và nơi công tác**: Chuyên viên ngân hàng, hỗ trợ tín dụng, tư vấn tài chính - bảo hiểm, kế toán viên tại các ngân hàng thương mại, tổ chức tín dụng, công ty chứng khoán, tổ chức tài chính, cơ quan quản lý nhà nước về tài chính ngân hàng, doanh nghiệp,… hoặc làm nhân viên kinh doanh trong công ty.
+
+19. **KẾ TOÁN (Mã ngành: 7340301)**
+    - **Tổ hợp xét tuyển**: A00, A01, C01, D01, X01, X02, X05, X25.
+    - **Vị trí việc làm và nơi công tác**: Vị trí việc làm là Kế toán viên, kiểm toán viên, kiểm soát viên, giao dịch viên ngân hàng, cán bộ ngành thuế, thủ quỹ, tư vấn tài chính, nhân viên môi giới chứng khoán, quản lý dự án, nhân viên phòng giao dịch và ngân quỹ, thanh tra kinh tế; giảng dạy tại các Trường, Viện, Trung tâm đào tạo kế toán.
+
+20. **QUẢN TRỊ KINH DOANH (Mã ngành: 7340101)**
+    - **Tổ hợp xét tuyển**: A00, A01, C01, D01, X01, X02, X05, X25.
+    - **Vị trí việc làm và nơi công tác**: Chuyên viên kinh doanh, phân tích và tư vấn quản trị kinh doanh; quản trị tại đơn vị chức năng hoặc hỗ trợ - giao dịch khách hàng, các tổ chức tài chính, chứng khoán; thành lập và điều hành công ty hoặc giảng dạy ngành quản trị kinh doanh các Trường, Viện.
+
+21. **LUẬT (Mã ngành: 7380101)**
+    - **Tổ hợp xét tuyển**: C00, C03, D01, D14, D15, X70, X74, X78.
+    - **Vị trí việc làm và nơi công tác**: Phát triển, hành nghề luật sư, công tác trong các ngành công an, báo chí, kiểm sát, tòa án, cơ quan thi hành án, bộ phận pháp chế các doanh nghiệp, trung tâm trọng tài thương mại, cơ quan hành chính Nhà nước; tham gia đào tạo ngành luật các trường đại học, cao đẳng, trung cấp.
+
+22. **NGÔN NGỮ ANH (Mã ngành: 7220201)**
+    - **Tổ hợp xét tuyển**: D01, D09, D10, D11, D14, D15, X25, X78.
+    - **Vị trí việc làm và nơi công tác**: Giảng dạy tiếng Anh tại các cơ sở giáo dục; biên dịch, phiên dịch tại các cơ quan, doanh nghiệp, dự án nhà nước và tư nhân thuộc các lĩnh vực ngoại giao, kinh doanh - thương mại, văn hóa - du lịch, khoa học - kỹ thuật, nhà hàng - khách sạn, dịch vụ, truyền thông, báo chí...
+
+---
+
 # TƯ VẤN THEO SỞ THÍCH
 
 Nếu người dùng nói
