@@ -97,9 +97,24 @@ app.post('/api/chat', async (req, res) => {
 
     // Format the payload for Google Generative Language API
     // The messages array from frontend should be formatted as:
-    // [ { role: 'user'|'model', parts: [ { text: '...' } ] } ]
+    // Prepare contents
+    let contents = JSON.parse(JSON.stringify(messages)); // deep copy
+
+    // Prepend system prompt to user message if model is Gemma 4 to avoid 500 Internal Error bug in Google API
+    if (systemPrompt) {
+      if (selectedModel.includes('gemma-4')) {
+        const firstUserMsg = contents.find(msg => msg.role === 'user');
+        if (firstUserMsg) {
+          if (!firstUserMsg.parts) firstUserMsg.parts = [];
+          firstUserMsg.parts.unshift({
+            text: `SYSTEM INSTRUCTIONS (strictly follow these instructions):\n${systemPrompt}`
+          });
+        }
+      }
+    }
+
     const payload = {
-      contents: messages,
+      contents: contents,
       generationConfig: {
         temperature: 0.3,
         topP: 0.95,
@@ -114,33 +129,110 @@ app.post('/api/chat', async (req, res) => {
       };
     }
 
-
-
-    // Attach system prompt if loaded
-    if (systemPrompt) {
+    // Attach system prompt officially if loaded and not Gemma 4 (which prepended it)
+    if (systemPrompt && !selectedModel.includes('gemma-4')) {
       payload.systemInstruction = {
         parts: [{ text: systemPrompt }]
       };
     }
 
-    console.log(`🤖 Sending request to Google API using model (streaming): ${modelPath}`);
+    let response;
+    let currentModel = selectedModel;
+    let currentApiUrl = apiUrl;
+    let currentPayload = payload;
 
-    // Call Google's API
-    const response = await fetch(apiUrl, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(payload)
-    });
+    const maxRetries = 2;
+    for (let attempt = 0; attempt <= maxRetries; attempt++) {
+      try {
+        console.log(`🤖 [Attempt ${attempt + 1}] Sending request to Google API using model (streaming): ${currentModel}`);
+        
+        response = await fetch(currentApiUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(currentPayload)
+        });
 
-    if (!response.ok) {
-      const errorData = await response.json().catch(() => ({}));
-      console.error('❌ Google API Error details:', errorData);
-      return res.status(response.status).json({
-        error: errorData.error?.message || 'Google API request failed.',
-        details: errorData
-      });
+        if (response.ok) {
+          break; // Success!
+        }
+
+        // Try to read error body if available
+        const errorData = await response.json().catch(() => ({}));
+        console.error(`❌ [Attempt ${attempt + 1}] Google API Error (${response.status}):`, errorData);
+
+        if (attempt < maxRetries) {
+          console.warn(`⚠️ Retrying in 500ms...`);
+          await new Promise(resolve => setTimeout(resolve, 500));
+        } else {
+          // Fallback if current model is gemma-4
+          if (currentModel.includes('gemma-4')) {
+            console.warn(`🚨 Gemma-4 failed after ${maxRetries + 1} attempts. Falling back to gemini-2.5-flash for reliability.`);
+            currentModel = 'gemini-2.5-flash';
+            currentApiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${currentModel}:streamGenerateContent?key=${apiKey}&alt=sse`;
+            
+            // Re-build payload for Gemini 2.5
+            const cleanContents = JSON.parse(JSON.stringify(messages));
+            currentPayload = {
+              contents: cleanContents,
+              generationConfig: {
+                temperature: 0.3,
+                topP: 0.95,
+                maxOutputTokens: 8192,
+                thinkingConfig: {
+                  thinkingBudget: mode === 'fast' ? 0 : 2048
+                }
+              }
+            };
+            if (systemPrompt) {
+              currentPayload.systemInstruction = {
+                parts: [{ text: systemPrompt }]
+              };
+            }
+            // Reset attempts for fallback model
+            attempt = -1;
+          } else {
+            return res.status(response.status).json({
+              error: errorData.error?.message || 'Google API request failed after retries and fallback.',
+              details: errorData
+            });
+          }
+        }
+      } catch (err) {
+        console.error(`❌ [Attempt ${attempt + 1}] Network/fetch error:`, err);
+        if (attempt < maxRetries) {
+          console.warn(`⚠️ Retrying in 500ms...`);
+          await new Promise(resolve => setTimeout(resolve, 500));
+        } else {
+          if (currentModel.includes('gemma-4')) {
+            console.warn(`🚨 Gemma-4 fetch failed. Falling back to gemini-2.5-flash.`);
+            currentModel = 'gemini-2.5-flash';
+            currentApiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${currentModel}:streamGenerateContent?key=${apiKey}&alt=sse`;
+            
+            const cleanContents = JSON.parse(JSON.stringify(messages));
+            currentPayload = {
+              contents: cleanContents,
+              generationConfig: {
+                temperature: 0.3,
+                topP: 0.95,
+                maxOutputTokens: 8192,
+                thinkingConfig: {
+                  thinkingBudget: mode === 'fast' ? 0 : 2048
+                }
+              }
+            };
+            if (systemPrompt) {
+              currentPayload.systemInstruction = {
+                parts: [{ text: systemPrompt }]
+              };
+            }
+            attempt = -1;
+          } else {
+            return res.status(500).json({ error: 'Internal Server Error during fetch', details: err.message });
+          }
+        }
+      }
     }
 
     // Set SSE headers for the client
