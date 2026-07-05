@@ -618,6 +618,7 @@
             font-size: 54px;
             background: linear-gradient(135deg, var(--primary), var(--accent));
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: 20px;
             filter: drop-shadow(0 4px 10px rgba(37, 99, 235, 0.2));
@@ -1607,6 +1608,24 @@
             return messageWrapper;
         }
 
+        // Helper to format math and LaTeX-style symbols in text responses
+        function formatMathSymbols(text) {
+            if (!text) return '';
+            return text
+                .replace(/\\\$/g, '$$') // Restore escaped dollar signs
+                .replace(/\$\\rightarrow\$/g, ' → ')
+                .replace(/\\rightarrow/g, ' → ')
+                .replace(/\$\\ge\$/g, ' ≥ ')
+                .replace(/\\ge/g, ' ≥ ')
+                .replace(/\$\\geq\$/g, ' ≥ ')
+                .replace(/\\geq/g, ' ≥ ')
+                .replace(/\$\\le\$/g, ' ≤ ')
+                .replace(/\\le/g, ' ≤ ')
+                .replace(/\$\\leq\$/g, ' ≤ ')
+                .replace(/\\leq/g, ' ≤ ')
+                .replace(/\$([^\$]+)\$/g, '$1'); // Strip remaining simple $ math delimiters (like $15$)
+        }
+
         // Helper to update streaming content dynamically
         function updateStreamingMessage(messageWrapper, text, thoughts = '') {
             const content = messageWrapper.querySelector('.message-content');
@@ -1635,7 +1654,8 @@
             }
             
             if (text) {
-                const parsedHtml = marked.parse(text);
+                const formattedText = formatMathSymbols(text);
+                const parsedHtml = marked.parse(formattedText);
                 const textContainer = document.createElement('div');
                 textContainer.innerHTML = DOMPurify.sanitize(parsedHtml);
                 content.appendChild(textContainer);
@@ -1674,7 +1694,8 @@
             }
             
             if (text) {
-                const parsedHtml = marked.parse(text);
+                const formattedText = formatMathSymbols(text);
+                const parsedHtml = marked.parse(formattedText);
                 const textContainer = document.createElement('div');
                 textContainer.innerHTML = DOMPurify.sanitize(parsedHtml);
                 content.appendChild(textContainer);
@@ -1722,7 +1743,8 @@
                 }
 
                 // Parse markdown to HTML and sanitize
-                const parsedHtml = marked.parse(text);
+                const formattedText = formatMathSymbols(text);
+                const parsedHtml = marked.parse(formattedText);
                 const textContainer = document.createElement('div');
                 textContainer.innerHTML = DOMPurify.sanitize(parsedHtml);
                 content.appendChild(textContainer);
