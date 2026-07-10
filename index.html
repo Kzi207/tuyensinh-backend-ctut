@@ -1623,6 +1623,8 @@
                 .replace(/\\le/g, ' ≤ ')
                 .replace(/\$\\leq\$/g, ' ≤ ')
                 .replace(/\\leq/g, ' ≤ ')
+                .replace(/\\times/g, ' × ')
+                .replace(/\\frac\{([^{}]+)\}\{([^{}]+)\}/g, '($1) / ($2)')
                 .replace(/\$([^\$]+)\$/g, '$1'); // Strip remaining simple $ math delimiters (like $15$)
         }
 

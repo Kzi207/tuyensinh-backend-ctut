@@ -1,0 +1,2429 @@
+{
+  "hoc_ba_thpt": [
+    {
+      "moc": "Max",
+      "hoc_ba": {
+        "min": 28.98,
+        "max": 30,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "ket_hop": {
+        "min": 28.5,
+        "max": 30,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 28,
+        "max": 30,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "1%",
+      "hoc_ba": {
+        "min": 27.62,
+        "max": 28.98,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "ket_hop": {
+        "min": 26,
+        "max": 28.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 25.5,
+        "max": 28,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "2%",
+      "hoc_ba": {
+        "min": 27.27,
+        "max": 27.62,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "ket_hop": {
+        "min": 25.13,
+        "max": 26,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 24.75,
+        "max": 25.5,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "3%",
+      "hoc_ba": {
+        "min": 27.01,
+        "max": 27.27,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "ket_hop": {
+        "min": 24.78,
+        "max": 25.13,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 24.25,
+        "max": 24.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "4%",
+      "hoc_ba": {
+        "min": 26.81,
+        "max": 27.01,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "ket_hop": {
+        "min": 24.49,
+        "max": 24.78,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 24,
+        "max": 24.25,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "5%",
+      "hoc_ba": {
+        "min": 26.65,
+        "max": 26.81,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "ket_hop": {
+        "min": 24.25,
+        "max": 24.49,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 23.6,
+        "max": 24,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "6%",
+      "hoc_ba": {
+        "min": 26.48,
+        "max": 26.65,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "ket_hop": {
+        "min": 23.99,
+        "max": 24.25,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 23.25,
+        "max": 23.6,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "7%",
+      "hoc_ba": {
+        "min": 26.33,
+        "max": 26.48,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "ket_hop": {
+        "min": 23.79,
+        "max": 23.99,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 23.1,
+        "max": 23.25,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "8%",
+      "hoc_ba": {
+        "min": 26.19,
+        "max": 26.33,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "ket_hop": {
+        "min": 23.66,
+        "max": 23.79,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 23,
+        "max": 23.1,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "9%",
+      "hoc_ba": {
+        "min": 26.1,
+        "max": 26.19,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "ket_hop": {
+        "min": 23.52,
+        "max": 23.66,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 22.75,
+        "max": 23,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "10%",
+      "hoc_ba": {
+        "min": 25.98,
+        "max": 26.1,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "ket_hop": {
+        "min": 23.38,
+        "max": 23.52,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 22.6,
+        "max": 22.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "11%",
+      "hoc_ba": {
+        "min": 25.87,
+        "max": 25.98,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "ket_hop": {
+        "min": 23.26,
+        "max": 23.38,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 22.5,
+        "max": 22.6,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "12%",
+      "hoc_ba": {
+        "min": 25.75,
+        "max": 25.87,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "ket_hop": {
+        "min": 23.16,
+        "max": 23.26,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 22.31,
+        "max": 22.5,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "13%",
+      "hoc_ba": {
+        "min": 25.64,
+        "max": 25.75,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "ket_hop": {
+        "min": 23.05,
+        "max": 23.16,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 22.25,
+        "max": 22.31,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "14%",
+      "hoc_ba": {
+        "min": 25.56,
+        "max": 25.64,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "ket_hop": {
+        "min": 22.96,
+        "max": 23.05,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 22.13,
+        "max": 22.25,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "15%",
+      "hoc_ba": {
+        "min": 25.47,
+        "max": 25.56,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "ket_hop": {
+        "min": 22.84,
+        "max": 22.96,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 22,
+        "max": 22.13,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "16%",
+      "hoc_ba": {
+        "min": 25.37,
+        "max": 25.47,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "ket_hop": {
+        "min": 22.76,
+        "max": 22.84,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 21.83,
+        "max": 22,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "17%",
+      "hoc_ba": {
+        "min": 25.29,
+        "max": 25.37,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "ket_hop": {
+        "min": 22.65,
+        "max": 22.76,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 21.75,
+        "max": 21.83,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "18%",
+      "hoc_ba": {
+        "min": 25.22,
+        "max": 25.29,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "ket_hop": {
+        "min": 22.56,
+        "max": 22.65,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 21.65,
+        "max": 21.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "19%",
+      "hoc_ba": {
+        "min": 25.13,
+        "max": 25.22,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "ket_hop": {
+        "min": 22.48,
+        "max": 22.56,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 21.55,
+        "max": 21.65,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "20%",
+      "hoc_ba": {
+        "min": 25.05,
+        "max": 25.13,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "ket_hop": {
+        "min": 22.39,
+        "max": 22.48,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 21.5,
+        "max": 21.55,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "21%",
+      "hoc_ba": {
+        "min": 24.97,
+        "max": 25.05,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "ket_hop": {
+        "min": 22.31,
+        "max": 22.39,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 21.35,
+        "max": 21.5,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "22%",
+      "hoc_ba": {
+        "min": 24.88,
+        "max": 24.97,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "ket_hop": {
+        "min": 22.23,
+        "max": 22.31,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 21.3,
+        "max": 21.35,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "23%",
+      "hoc_ba": {
+        "min": 24.82,
+        "max": 24.88,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "ket_hop": {
+        "min": 22.15,
+        "max": 22.23,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 21.25,
+        "max": 21.3,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "24%",
+      "hoc_ba": {
+        "min": 24.76,
+        "max": 24.82,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "ket_hop": {
+        "min": 22.08,
+        "max": 22.15,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 21.1,
+        "max": 21.25,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "25%",
+      "hoc_ba": {
+        "min": 24.69,
+        "max": 24.76,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "ket_hop": {
+        "min": 22.01,
+        "max": 22.08,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 21.05,
+        "max": 21.1,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "26%",
+      "hoc_ba": {
+        "min": 24.62,
+        "max": 24.69,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "ket_hop": {
+        "min": 21.94,
+        "max": 22.01,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 21,
+        "max": 21.05,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "27%",
+      "hoc_ba": {
+        "min": 24.56,
+        "max": 24.62,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "ket_hop": {
+        "min": 21.86,
+        "max": 21.94,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 20.85,
+        "max": 21,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "28%",
+      "hoc_ba": {
+        "min": 24.49,
+        "max": 24.56,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "ket_hop": {
+        "min": 21.77,
+        "max": 21.86,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 20.8,
+        "max": 20.85,
+        "includeMin": false,
+        "includeMax": true
+      }
+    }
+  ],
+  "vsat_toan": [
+    {
+      "moc": "Max",
+      "vsat": {
+        "min": 150,
+        "max": 150,
+        "includeMin": true,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 10,
+        "max": 10,
+        "includeMin": true,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "0.5%",
+      "vsat": {
+        "min": 144,
+        "max": 150,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 9.5,
+        "max": 10,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "1%",
+      "vsat": {
+        "min": 140.5,
+        "max": 144,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 9.5,
+        "max": 9.5,
+        "includeMin": true,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "2%",
+      "vsat": {
+        "min": 136.5,
+        "max": 140.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 9,
+        "max": 9.5,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "5%",
+      "vsat": {
+        "min": 129.5,
+        "max": 136.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 9,
+        "max": 9,
+        "includeMin": true,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "10%",
+      "vsat": {
+        "min": 122.5,
+        "max": 129.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 8.5,
+        "max": 9,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "20%",
+      "vsat": {
+        "min": 113,
+        "max": 122.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 8.25,
+        "max": 8.5,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "30%",
+      "vsat": {
+        "min": 105.5,
+        "max": 113,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 7.75,
+        "max": 8.25,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "40%",
+      "vsat": {
+        "min": 98.5,
+        "max": 105.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 7.5,
+        "max": 7.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "50%",
+      "vsat": {
+        "min": 92.5,
+        "max": 98.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 7.25,
+        "max": 7.5,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "60%",
+      "vsat": {
+        "min": 86,
+        "max": 92.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 6.75,
+        "max": 7.25,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "70%",
+      "vsat": {
+        "min": 79,
+        "max": 86,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 6.25,
+        "max": 6.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "80%",
+      "vsat": {
+        "min": 71.5,
+        "max": 79,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 5.75,
+        "max": 6.25,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "90%",
+      "vsat": {
+        "min": 61,
+        "max": 71.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 5,
+        "max": 5.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "> 90%",
+      "vsat": {
+        "min": 0,
+        "max": 61,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 0,
+        "max": 5,
+        "includeMin": false,
+        "includeMax": true
+      }
+    }
+  ],
+  "vsat_vat_ly": [
+    {
+      "moc": "Max",
+      "vsat": {
+        "min": 150,
+        "max": 150,
+        "includeMin": true,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 10,
+        "max": 10,
+        "includeMin": true,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "0.5%",
+      "vsat": {
+        "min": 135,
+        "max": 150,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 9.25,
+        "max": 10,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "1%",
+      "vsat": {
+        "min": 131,
+        "max": 135,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 9,
+        "max": 9.25,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "2%",
+      "vsat": {
+        "min": 126.5,
+        "max": 131,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 8.75,
+        "max": 9,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "5%",
+      "vsat": {
+        "min": 119,
+        "max": 126.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 8.35,
+        "max": 8.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "10%",
+      "vsat": {
+        "min": 112.5,
+        "max": 119,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 8,
+        "max": 8.35,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "20%",
+      "vsat": {
+        "min": 103.5,
+        "max": 112.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 7.25,
+        "max": 8,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "30%",
+      "vsat": {
+        "min": 97.5,
+        "max": 103.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 6.75,
+        "max": 7.25,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "40%",
+      "vsat": {
+        "min": 92,
+        "max": 97.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 6.25,
+        "max": 6.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "50%",
+      "vsat": {
+        "min": 87,
+        "max": 92,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 6,
+        "max": 6.25,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "60%",
+      "vsat": {
+        "min": 82,
+        "max": 87,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 5.5,
+        "max": 6,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "70%",
+      "vsat": {
+        "min": 76.5,
+        "max": 82,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 5,
+        "max": 5.5,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "80%",
+      "vsat": {
+        "min": 70,
+        "max": 76.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 4.35,
+        "max": 5,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "90%",
+      "vsat": {
+        "min": 61.5,
+        "max": 70,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 3.75,
+        "max": 4.35,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "> 90%",
+      "vsat": {
+        "min": 0,
+        "max": 61.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 0,
+        "max": 3.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    }
+  ],
+  "vsat_hoa_hoc": [
+    {
+      "moc": "Max",
+      "vsat": {
+        "min": 150,
+        "max": 150,
+        "includeMin": true,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 10,
+        "max": 10,
+        "includeMin": true,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "0.5%",
+      "vsat": {
+        "min": 140,
+        "max": 150,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 9.5,
+        "max": 10,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "1%",
+      "vsat": {
+        "min": 136.5,
+        "max": 140,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 9.25,
+        "max": 9.5,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "2%",
+      "vsat": {
+        "min": 132,
+        "max": 136.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 9.25,
+        "max": 9.25,
+        "includeMin": true,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "5%",
+      "vsat": {
+        "min": 125,
+        "max": 132,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 8.75,
+        "max": 9.25,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "10%",
+      "vsat": {
+        "min": 117,
+        "max": 125,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 8.5,
+        "max": 8.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "20%",
+      "vsat": {
+        "min": 107,
+        "max": 117,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 8,
+        "max": 8.5,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "30%",
+      "vsat": {
+        "min": 99,
+        "max": 107,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 7.75,
+        "max": 8,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "40%",
+      "vsat": {
+        "min": 92.5,
+        "max": 99,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 7.35,
+        "max": 7.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "50%",
+      "vsat": {
+        "min": 86,
+        "max": 92.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 7,
+        "max": 7.35,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "60%",
+      "vsat": {
+        "min": 80,
+        "max": 86,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 6.6,
+        "max": 7,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "70%",
+      "vsat": {
+        "min": 73,
+        "max": 80,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 6.1,
+        "max": 6.6,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "80%",
+      "vsat": {
+        "min": 66,
+        "max": 73,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 5.5,
+        "max": 6.1,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "90%",
+      "vsat": {
+        "min": 57,
+        "max": 66,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 4.75,
+        "max": 5.5,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "> 90%",
+      "vsat": {
+        "min": 0,
+        "max": 57,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 0,
+        "max": 4.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    }
+  ],
+  "vsat_sinh_hoc": [
+    {
+      "moc": "Max",
+      "vsat": {
+        "min": 150,
+        "max": 150,
+        "includeMin": true,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 10,
+        "max": 10,
+        "includeMin": true,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "0.5%",
+      "vsat": {
+        "min": 138,
+        "max": 150,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 9.75,
+        "max": 10,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "1%",
+      "vsat": {
+        "min": 135,
+        "max": 138,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 9.5,
+        "max": 9.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "2%",
+      "vsat": {
+        "min": 131,
+        "max": 135,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 9.25,
+        "max": 9.5,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "5%",
+      "vsat": {
+        "min": 125,
+        "max": 131,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 8.75,
+        "max": 9.25,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "10%",
+      "vsat": {
+        "min": 118.5,
+        "max": 125,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 8.25,
+        "max": 8.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "20%",
+      "vsat": {
+        "min": 109,
+        "max": 118.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 7.75,
+        "max": 8.25,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "30%",
+      "vsat": {
+        "min": 102,
+        "max": 109,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 7.25,
+        "max": 7.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "40%",
+      "vsat": {
+        "min": 96,
+        "max": 102,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 6.85,
+        "max": 7.25,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "50%",
+      "vsat": {
+        "min": 90.25,
+        "max": 96,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 6.5,
+        "max": 6.85,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "60%",
+      "vsat": {
+        "min": 84,
+        "max": 90.25,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 6.1,
+        "max": 6.5,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "70%",
+      "vsat": {
+        "min": 78,
+        "max": 84,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 5.75,
+        "max": 6.1,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "80%",
+      "vsat": {
+        "min": 71,
+        "max": 78,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 5.35,
+        "max": 5.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "90%",
+      "vsat": {
+        "min": 62,
+        "max": 71,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 4.75,
+        "max": 5.35,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "> 90%",
+      "vsat": {
+        "min": 0,
+        "max": 62,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 0,
+        "max": 4.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    }
+  ],
+  "vsat_lich_su": [
+    {
+      "moc": "Max",
+      "vsat": {
+        "min": 150,
+        "max": 150,
+        "includeMin": true,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 10,
+        "max": 10,
+        "includeMin": true,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "0.5%",
+      "vsat": {
+        "min": 141,
+        "max": 150,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 10,
+        "max": 10,
+        "includeMin": true,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "1%",
+      "vsat": {
+        "min": 138,
+        "max": 141,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 10,
+        "max": 10,
+        "includeMin": true,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "2%",
+      "vsat": {
+        "min": 136.5,
+        "max": 138,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 9.75,
+        "max": 10,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "5%",
+      "vsat": {
+        "min": 131,
+        "max": 136.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 9.5,
+        "max": 9.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "10%",
+      "vsat": {
+        "min": 126,
+        "max": 131,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 9.25,
+        "max": 9.5,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "20%",
+      "vsat": {
+        "min": 119,
+        "max": 126,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 8.75,
+        "max": 9.25,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "30%",
+      "vsat": {
+        "min": 113,
+        "max": 119,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 8.5,
+        "max": 8.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "40%",
+      "vsat": {
+        "min": 108,
+        "max": 113,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 8.1,
+        "max": 8.5,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "50%",
+      "vsat": {
+        "min": 103,
+        "max": 108,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 7.75,
+        "max": 8.1,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "60%",
+      "vsat": {
+        "min": 97.5,
+        "max": 103,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 7.35,
+        "max": 7.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "70%",
+      "vsat": {
+        "min": 91.5,
+        "max": 97.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 7,
+        "max": 7.35,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "80%",
+      "vsat": {
+        "min": 85,
+        "max": 91.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 6.5,
+        "max": 7,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "90%",
+      "vsat": {
+        "min": 75,
+        "max": 85,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 5.75,
+        "max": 6.5,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "> 90%",
+      "vsat": {
+        "min": 0,
+        "max": 75,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 0,
+        "max": 5.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    }
+  ],
+  "vsat_dia_ly": [
+    {
+      "moc": "Max",
+      "vsat": {
+        "min": 150,
+        "max": 150,
+        "includeMin": true,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 10,
+        "max": 10,
+        "includeMin": true,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "0.5%",
+      "vsat": {
+        "min": 135,
+        "max": 150,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 9.5,
+        "max": 10,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "1%",
+      "vsat": {
+        "min": 134,
+        "max": 135,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 9,
+        "max": 9.5,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "2%",
+      "vsat": {
+        "min": 130.5,
+        "max": 134,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 8.75,
+        "max": 9,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "5%",
+      "vsat": {
+        "min": 125,
+        "max": 130.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 8.5,
+        "max": 8.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "10%",
+      "vsat": {
+        "min": 119.5,
+        "max": 125,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 8.25,
+        "max": 8.5,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "20%",
+      "vsat": {
+        "min": 112,
+        "max": 119.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 7.75,
+        "max": 8.25,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "30%",
+      "vsat": {
+        "min": 105.5,
+        "max": 112,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 7.25,
+        "max": 7.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "40%",
+      "vsat": {
+        "min": 100.5,
+        "max": 105.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 7,
+        "max": 7.25,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "50%",
+      "vsat": {
+        "min": 95.5,
+        "max": 100.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 6.5,
+        "max": 7,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "60%",
+      "vsat": {
+        "min": 90.5,
+        "max": 95.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 6.25,
+        "max": 6.5,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "70%",
+      "vsat": {
+        "min": 84.5,
+        "max": 90.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 5.75,
+        "max": 6.25,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "80%",
+      "vsat": {
+        "min": 77.5,
+        "max": 84.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 5.35,
+        "max": 5.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "90%",
+      "vsat": {
+        "min": 68,
+        "max": 77.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 4.6,
+        "max": 5.35,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "> 90%",
+      "vsat": {
+        "min": 0,
+        "max": 68,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 0,
+        "max": 4.6,
+        "includeMin": false,
+        "includeMax": true
+      }
+    }
+  ],
+  "vsat_tieng_anh": [
+    {
+      "moc": "Max",
+      "vsat": {
+        "min": 150,
+        "max": 150,
+        "includeMin": true,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 10,
+        "max": 10,
+        "includeMin": true,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "0.5%",
+      "vsat": {
+        "min": 142,
+        "max": 150,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 9.25,
+        "max": 10,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "1%",
+      "vsat": {
+        "min": 138,
+        "max": 142,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 8.75,
+        "max": 9.25,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "2%",
+      "vsat": {
+        "min": 135,
+        "max": 138,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 8.5,
+        "max": 8.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "5%",
+      "vsat": {
+        "min": 129,
+        "max": 135,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 7.75,
+        "max": 8.5,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "10%",
+      "vsat": {
+        "min": 121.5,
+        "max": 129,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 7.25,
+        "max": 7.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "20%",
+      "vsat": {
+        "min": 112.9,
+        "max": 121.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 6.5,
+        "max": 7.25,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "30%",
+      "vsat": {
+        "min": 105.5,
+        "max": 112.9,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 5.75,
+        "max": 6.5,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "40%",
+      "vsat": {
+        "min": 99,
+        "max": 105.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 5.5,
+        "max": 5.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "50%",
+      "vsat": {
+        "min": 92.5,
+        "max": 99,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 5,
+        "max": 5.5,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "60%",
+      "vsat": {
+        "min": 86,
+        "max": 92.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 4.75,
+        "max": 5,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "70%",
+      "vsat": {
+        "min": 78.5,
+        "max": 86,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 4.25,
+        "max": 4.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "80%",
+      "vsat": {
+        "min": 70,
+        "max": 78.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 3.75,
+        "max": 4.25,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "90%",
+      "vsat": {
+        "min": 59.5,
+        "max": 70,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 3.25,
+        "max": 3.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "> 90%",
+      "vsat": {
+        "min": 0,
+        "max": 59.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 0,
+        "max": 3.25,
+        "includeMin": false,
+        "includeMax": true
+      }
+    }
+  ],
+  "vsat_ngu_van": [
+    {
+      "moc": "Max",
+      "vsat": {
+        "min": 150,
+        "max": 150,
+        "includeMin": true,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 10,
+        "max": 10,
+        "includeMin": true,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "0.5%",
+      "vsat": {
+        "min": 133.5,
+        "max": 150,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 9,
+        "max": 10,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "1%",
+      "vsat": {
+        "min": 131.5,
+        "max": 133.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 9,
+        "max": 9,
+        "includeMin": true,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "2%",
+      "vsat": {
+        "min": 129,
+        "max": 131.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 8.75,
+        "max": 9,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "5%",
+      "vsat": {
+        "min": 125,
+        "max": 129,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 8.5,
+        "max": 8.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "10%",
+      "vsat": {
+        "min": 121.5,
+        "max": 125,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 8.25,
+        "max": 8.5,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "20%",
+      "vsat": {
+        "min": 116.5,
+        "max": 121.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 8,
+        "max": 8.25,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "30%",
+      "vsat": {
+        "min": 113,
+        "max": 116.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 7.75,
+        "max": 8,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "40%",
+      "vsat": {
+        "min": 109.5,
+        "max": 113,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 7.5,
+        "max": 7.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "50%",
+      "vsat": {
+        "min": 106,
+        "max": 109.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 7.25,
+        "max": 7.5,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "60%",
+      "vsat": {
+        "min": 102.5,
+        "max": 106,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 7,
+        "max": 7.25,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "70%",
+      "vsat": {
+        "min": 98.5,
+        "max": 102.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 6.75,
+        "max": 7,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "80%",
+      "vsat": {
+        "min": 93.5,
+        "max": 98.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 6.25,
+        "max": 6.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "90%",
+      "vsat": {
+        "min": 87,
+        "max": 93.5,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 5.75,
+        "max": 6.25,
+        "includeMin": false,
+        "includeMax": true
+      }
+    },
+    {
+      "moc": "> 90%",
+      "vsat": {
+        "min": 0,
+        "max": 87,
+        "includeMin": false,
+        "includeMax": true
+      },
+      "thpt": {
+        "min": 0,
+        "max": 5.75,
+        "includeMin": false,
+        "includeMax": true
+      }
+    }
+  ]
+}
