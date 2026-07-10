@@ -166,10 +166,11 @@ function convertHocBa(x, type = 'hoc_ba', subjects = null, combinationCode = nul
 ${subjectBreakdown}- **Công thức tính:** ${equation}
 - **Điểm sau quy đổi (thang 30):** **${converted.toFixed(2)}**`;
 
-    // Append major recommendation if combinationCode is valid
+    // Append major recommendation and safety advisory if combinationCode is valid
     if (combinationCode && COMBINATION_MAJORS[combinationCode]) {
         explanation += `\n\n📚 **Các ngành xét tuyển tổ hợp ${combinationCode} tại CTUT bạn có thể đăng ký:**\n`;
         explanation += COMBINATION_MAJORS[combinationCode].map(m => `- ${m}`).join('\n');
+        explanation += getAdvisoryReport(converted, combinationCode);
     }
     
     return {
@@ -270,6 +271,7 @@ ${explanations.join('\n')}
     if (combination && COMBINATION_MAJORS[combination.code]) {
         mainExplanation += `\n\n📚 **Các ngành xét tuyển tổ hợp ${combination.code} tại CTUT bạn có thể đăng ký:**\n`;
         mainExplanation += COMBINATION_MAJORS[combination.code].map(m => `- ${m}`).join('\n');
+        mainExplanation += getAdvisoryReport(roundedTotal, combination.code);
     }
 
     return {
@@ -431,6 +433,89 @@ const COMBINATION_MAJORS = {
     'X74': ['Luật (7380101)'],
     'X78': ['Luật (7380101)', 'Ngôn ngữ Anh (7220201)']
 };
+
+const BENCHMARKS_2025 = {
+    'Khoa học máy tính': 22.54,
+    'Khoa học dữ liệu': 21.24,
+    'Hệ thống thông tin': 21.92,
+    'Công nghệ thông tin': 24.23,
+    'Kỹ thuật phần mềm': 22.94,
+    'Kỹ thuật hệ thống công nghiệp': 20.98,
+    'Logistics và quản lý chuỗi cung ứng': 23.89,
+    'Quản lý công nghiệp': 22.22,
+    'Quản lý xây dựng': 20.95,
+    'Công nghệ kỹ thuật công trình xây dựng': 20.15,
+    'Công nghệ kỹ thuật năng lượng': 21.24,
+    'Công nghệ kỹ thuật điện, điện tử': 23.37,
+    'Công nghệ kỹ thuật cơ điện tử': 23.37,
+    'CNKT điều khiển và tự động hóa': 23.13,
+    'Công nghệ kỹ thuật hóa học': 23.04,
+    'Công nghệ thực phẩm': 23.26,
+    'Công nghệ sinh học': 22.55,
+    'Tài chính - Ngân hàng': 23.43,
+    'Kế toán': 23.29,
+    'Quản trị kinh doanh': 23.04,
+    'Luật': 24.68,
+    'Ngôn ngữ Anh': 23.74
+};
+
+function evaluateSafety(score, benchmark) {
+    const diff = score - benchmark;
+    if (diff >= 1.0) {
+        return { rating: '🟢 Rất an toàn', desc: 'Điểm quy đổi vượt điểm chuẩn 2025 từ 1.0 điểm trở lên. Khả năng trúng tuyển cực kỳ cao.' };
+    } else if (diff >= 0) {
+        return { rating: '🟢 Khá an toàn', desc: 'Điểm quy đổi bằng hoặc vượt điểm chuẩn 2025 dưới 1.0 điểm. Cơ hội trúng tuyển lớn.' };
+    } else if (diff >= -1.0) {
+        return { rating: '🟡 Có cơ hội', desc: 'Điểm quy đổi thấp hơn điểm chuẩn 2025 dưới 1.0 điểm. Nếu điểm chuẩn năm nay giảm nhẹ, cơ hội vẫn rộng mở.' };
+    } else if (diff >= -2.0) {
+        return { rating: '🟠 Cạnh tranh', desc: 'Điểm quy đổi thấp hơn điểm chuẩn 2025 từ 1.0 đến 2.0 điểm. Mức độ cạnh tranh cao.' };
+    } else {
+        return { rating: '🔴 Khó', desc: 'Điểm quy đổi thấp hơn điểm chuẩn 2025 trên 2.0 điểm. Khả năng trúng tuyển thấp.' };
+    }
+}
+
+function getAdvisoryReport(convertedScore, combinationCode) {
+    if (!combinationCode || !COMBINATION_MAJORS[combinationCode]) {
+        return '';
+    }
+    
+    let report = `\n\n### 📊 Đánh giá cơ hội trúng tuyển dựa trên điểm chuẩn THPT 2025:\n`;
+    const majors = COMBINATION_MAJORS[combinationCode];
+    
+    const ratedMajors = majors.map(major => {
+        const cleanName = major.split(' (')[0].trim();
+        const benchmark = BENCHMARKS_2025[cleanName];
+        if (benchmark === undefined) {
+            return { major, rating: '❓ Chưa có thông tin', benchmark: null, desc: 'Không tìm thấy dữ liệu điểm chuẩn tham chiếu.' };
+        }
+        const evalRes = evaluateSafety(convertedScore, benchmark);
+        return {
+            major,
+            rating: evalRes.rating,
+            desc: evalRes.desc,
+            benchmark
+        };
+    });
+    
+    // Sort ratedMajors: safety level from safest to hardest
+    const order = {
+        '🟢 Rất an toàn': 1,
+        '🟢 Khá an toàn': 2,
+        '🟡 Có cơ hội': 3,
+        '🟠 Cạnh tranh': 4,
+        '🔴 Khó': 5,
+        '❓ Chưa có thông tin': 6
+    };
+    
+    ratedMajors.sort((a, b) => order[a.rating] - order[b.rating]);
+    
+    ratedMajors.forEach(item => {
+        const benchmarkStr = item.benchmark !== null ? `(Điểm chuẩn 2025: **${item.benchmark.toFixed(2)}**)` : '';
+        report += `- Ngành **${item.major}**: ${item.rating} ${benchmarkStr}\n  *${item.desc}*\n`;
+    });
+    
+    return report;
+}
 
 function findCombination(subjectKeys) {
     const targetNames = subjectKeys.map(k => SUBJECT_KEY_TO_NAME[k]).filter(Boolean);

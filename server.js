@@ -79,6 +79,7 @@ Analyze the user's query: "${userQuery.replace(/"/g, '\\"')}" and output a JSON 
   "scores": {
     "tohop": number | null, 
     "type": "hoc_ba" | "ket_hop" | null,
+    "combination": string | null,
     "subjects": {
       "toan": number | null,
       "vat_ly": number | null,
@@ -101,23 +102,28 @@ Rules:
    - Identify if it is "hoc_ba" (academic records/học bạ) or "vsat" (V-SAT exam score).
    - Extract the numeric scores. Keep them as float/integers.
    - Map the subjects mentioned to their corresponding keys in "subjects" (Tiếng Anh -> tieng_anh, Toán -> toan, Vật lí/Vật lý -> vat_ly, Hóa học -> hoa_hoc, Sinh học -> sinh_hoc, Lịch sử -> lich_su, Địa lí/Địa lý -> dia_ly, Ngữ văn/Văn -> ngu_van, GDCD -> gdcd, Tin học -> tin_hoc, Công nghệ/CNCN -> cong_nghe).
-   - If they provide a combined score for học bạ, set "tohop" (e.g., 27.5) and specify "type" as "hoc_ba" (for normal học bạ) or "ket_hop" (if they say "kết hợp" or "học bạ kết hợp"). If they don't specify, default "type" to "hoc_ba".
+   - If they specify a combination code (e.g., A01, A00, D01, X06, X26) or name specific subjects they want to apply with (e.g., "toán lý tin", "toán lý hóa", "toán văn anh"), identify the corresponding combination code (A00, A01, C00, D01, X06, etc.) and set it in "combination".
+   - If they provide a combined score for học bạ, set "tohop" (e.g., 25.0) and specify "type" as "hoc_ba" (for normal học bạ) or "ket_hop" (if they say "kết hợp" or "học bạ kết hợp"). If they don't specify, default "type" to "hoc_ba".
    - If they provide individual subject scores for học bạ (e.g., "môn toán 9, hóa 9, vật lý 9"), extract them into the "subjects" object, calculate their sum and set it in "tohop".
 
 Few-shot Examples:
 Example 1: "Đổi hộ mình điểm học bạ 28.2 sang thpt với"
 Output:
-{"is_conversion": true, "type": "hoc_ba", "scores": {"tohop": 28.2, "type": "hoc_ba", "subjects": null}}
+{"is_conversion": true, "type": "hoc_ba", "scores": {"tohop": 28.2, "type": "hoc_ba", "combination": null, "subjects": null}}
 
-Example 2: "môn toán 9 , hóa 9 , vật lý 9 , tính học bạ"
+Example 2: "toán lý tin 25 điểm học bạ học được nghành nào"
 Output:
-{"is_conversion": true, "type": "hoc_ba", "scores": {"tohop": 27.0, "type": "hoc_ba", "subjects": {"toan": 9.0, "hoa_hoc": 9.0, "vat_ly": 9.0}}}
+{"is_conversion": true, "type": "hoc_ba", "scores": {"tohop": 25.0, "type": "hoc_ba", "combination": "X06", "subjects": null}}
 
-Example 3: "quy đổi điểm vsat toán 120 lý 115 hóa 130"
+Example 3: "môn toán 9 , hóa 9 , vật lý 9 , tính học bạ"
 Output:
-{"is_conversion": true, "type": "vsat", "scores": {"tohop": null, "type": null, "subjects": {"toan": 120.0, "vat_ly": 115.0, "hoa_hoc": 130.0}}}
+{"is_conversion": true, "type": "hoc_ba", "scores": {"tohop": 27.0, "type": "hoc_ba", "combination": "A00", "subjects": {"toan": 9.0, "hoa_hoc": 9.0, "vat_ly": 9.0}}}
 
-Example 4: "Năm nay trường tuyển sinh những ngành nào?"
+Example 4: "quy đổi điểm vsat toán 135 lý 125 hóa 100"
+Output:
+{"is_conversion": true, "type": "vsat", "scores": {"tohop": null, "type": null, "combination": "A00", "subjects": {"toan": 135.0, "vat_ly": 125.0, "hoa_hoc": 100.0}}}
+
+Example 5: "Năm nay trường tuyển sinh những ngành nào?"
 Output:
 {"is_conversion": false, "type": null, "scores": null}
 
@@ -149,8 +155,13 @@ function parseClassifierResponse(text) {
         parsed.scores = {
           tohop: parsed.tohop !== undefined ? parsed.tohop : null,
           type: parsed.type !== undefined ? parsed.type : null,
+          combination: parsed.combination !== undefined ? parsed.combination : null,
           subjects: parsed.subjects !== undefined ? parsed.subjects : null
         };
+      } else {
+        if (parsed.scores.combination === undefined) {
+          parsed.scores.combination = null;
+        }
       }
     }
     return parsed;
@@ -207,6 +218,10 @@ function parseClassifierResponse(text) {
     const tohopMatch = text.match(/"tohop":\s*([0-9.]+)/) || text.match(/tohop:\s*([0-9.]+)/);
     if (tohopMatch) tohop = parseFloat(tohopMatch[1]);
     
+    let combination = null;
+    const comboMatch = text.match(/"combination":\s*"([^"]+)"/) || text.match(/combination:\s*["']?([A-Z0-9]+)["']?/);
+    if (comboMatch) combination = comboMatch[1].toUpperCase();
+
     // Extract subject scores via regex
     const subjects = {};
     let hasSubjects = false;
@@ -238,6 +253,7 @@ function parseClassifierResponse(text) {
       scores: {
         tohop: tohop,
         type: type,
+        combination: combination,
         subjects: hasSubjects ? subjects : null
       }
     };
@@ -374,8 +390,8 @@ app.post('/api/chat', async (req, res) => {
         }
         
         if (tohop !== null && tohop !== undefined && !isNaN(tohop)) {
-          let combinationCode = null;
-          if (hasSubjects) {
+          let combinationCode = classification.scores?.combination || null;
+          if (hasSubjects && !combinationCode) {
             const keys = Object.keys(subjects);
             const combo = scoreConverter.findCombination(keys);
             if (combo) {
